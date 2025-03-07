@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  title: string = 'Quem somos';
+  title: string = 'Quem somos?';
   description: string = `Fundada por três psicólogos apaixonados pela profissão, a Contactus nasceu da crença no poder transformador da psicologia para promover qualidade de vida e bem-estar. Nosso trabalho é guiado pelas normas éticas da profissão e pelo conhecimento científico mais atualizado, aliado a recursos personalizados e de alta qualidade.  
 
 Na Contactus, o foco está no acolhimento das dificuldades de cada paciente, oferecendo um espaço seguro e empático para o desenvolvimento pessoal. Acreditamos no trabalho conjunto, onde paciente e terapeuta caminham lado a lado em busca de resultados concretos e relevantes, sempre apresentados de forma clara e transparente.  
