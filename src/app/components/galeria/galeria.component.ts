@@ -1,24 +1,35 @@
-import { Component, Input, AfterViewInit } from '@angular/core';
+import { Component, Input, AfterViewInit, OnChanges, SimpleChanges } from '@angular/core';
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { Lightbox } from 'ngx-lightbox';
 
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
   styleUrls: ['./galeria.component.css']
 })
-export class GaleriaComponent implements AfterViewInit {
-  @Input() urls: { photoUrl: string }[] = []; // Lista de URLs das imagens
-  lightboxImages: any[] = []; // Lista de imagens para o Lightbox
-  private swiper: Swiper | undefined; // Instância do Swiper
-  isModalOpen = false; // Controla se o modal está aberto
-  selectedImage = ''; // Armazena a URL da imagem selecionada
-
-  constructor(private lightbox: Lightbox) {}
+export class GaleriaComponent implements AfterViewInit, OnChanges {
+  @Input() urls: { photoUrl: string }[] = [];
+  private swiper: Swiper | undefined;
+  isModalOpen = false;
+  selectedImage = '';
 
   ngAfterViewInit(): void {
-    // Inicializa o Swiper
+    this.initSwiper();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['urls'] && this.urls.length > 0) {
+      setTimeout(() => {
+        this.initSwiper();
+      });
+    }
+  }
+
+  private initSwiper(): void {
+    if (this.swiper) {
+      this.swiper.destroy(true, true); // Destroi a instância antiga antes de recriar
+    }
+
     this.swiper = new Swiper('.swiper-container', {
       modules: [Navigation, Pagination, Autoplay],
       slidesPerView: 1,
@@ -37,36 +48,23 @@ export class GaleriaComponent implements AfterViewInit {
         clickable: true,
       },
       breakpoints: {
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
+        640: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
       }
-    });
-
-    // Prepara as imagens para o Lightbox
-    this.urls.forEach((url, index) => {
-      this.lightboxImages.push({
-        src: url.photoUrl,
-        caption: `Imagem ${index + 1}`,
-        thumb: url.photoUrl
-      });
     });
   }
 
-  // Abre o Lightbox
   openLightbox(index: number): void {
     this.selectedImage = this.urls[index].photoUrl;
     this.isModalOpen = true;
   }
 
-  // Fecha o modal
   closeImage(): void {
     this.isModalOpen = false;
+  }
+
+  trackByFn(index: number, item: { photoUrl: string }): string {
+    return item.photoUrl;
   }
 }
