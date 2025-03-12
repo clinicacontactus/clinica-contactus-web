@@ -19,7 +19,7 @@ export class GaleriaComponent implements AfterViewInit {
 
     setTimeout(() => {
       this.initSwiper();
-    }, 500);
+    }, 1000);
 
     this.urls.forEach((url, index) => {
       this.lightboxImages.push({
