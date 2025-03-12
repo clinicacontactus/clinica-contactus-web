@@ -8,16 +8,27 @@
             <h2>{{ profissional.nome }}</h2>
             <h3>{{ profissional.titulo }}</h3>
             <h4>{{ profissional.subtitulo }}</h4>
-            <h5>Formação Acadêmica:</h5>
-            <ul>
-                <li *ngFor="let formacao of profissional.formacao">{{ formacao }}</li>
-            </ul>
-            <h5>Público-Alvo:</h5>
-            <ul>
-                <li *ngFor="let publico of profissional.publicoAlvo">{{ publico }}</li>
-            </ul>
-            <h5>Atuação Profissional:</h5>
-            <p>{{ profissional.atuacao }}</p>
+
+            <div class="bg-info">
+                <h4>Formação Acadêmica:</h4>
+                <ul>
+                    <li *ngFor="let formacao of profissional.formacao">{{ formacao }}</li>
+                </ul>
+            </div>
+
+            <div class="bg-info">
+                <h4>Público-Alvo:</h4>
+                <ul>
+                    <li *ngFor="let publico of profissional.publicoAlvo">{{ publico }}</li>
+                </ul>
+            </div>
+
+            <div class="bg-info">
+                <h4>Atuação Profissional:</h4>
+                <p>{{ profissional.atuacao }}</p>
+            </div>
+
+
         </div>
     </div>
 </div>

@@ -13,7 +13,7 @@ export class WelcomeModalComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.showModal = false;
-    }, 3000);
+    }, 4000);
   }
 
   fecharModal() {
