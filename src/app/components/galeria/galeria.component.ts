@@ -1,35 +1,36 @@
-import { Component, Input, AfterViewInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Lightbox } from 'ngx-lightbox';
 
 @Component({
   selector: 'app-galeria',
   templateUrl: './galeria.component.html',
   styleUrls: ['./galeria.component.css']
 })
-export class GaleriaComponent implements AfterViewInit, OnChanges {
+export class GaleriaComponent implements AfterViewInit {
   @Input() urls: { photoUrl: string }[] = [];
+  lightboxImages: any[] = [];
   private swiper: Swiper | undefined;
   isModalOpen = false;
   selectedImage = '';
 
   ngAfterViewInit(): void {
-    this.initSwiper();
-  }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['urls'] && this.urls.length > 0) {
-      setTimeout(() => {
-        this.initSwiper();
+    setTimeout(() => {
+      this.initSwiper();
+    }, 500);
+
+    this.urls.forEach((url, index) => {
+      this.lightboxImages.push({
+        src: url.photoUrl,
+        caption: `Imagem ${index + 1}`,
+        thumb: url.photoUrl
       });
-    }
+    });
   }
 
   private initSwiper(): void {
-    if (this.swiper) {
-      this.swiper.destroy(true, true); // Destroi a instância antiga antes de recriar
-    }
-
     this.swiper = new Swiper('.swiper-container', {
       modules: [Navigation, Pagination, Autoplay],
       slidesPerView: 1,
@@ -62,9 +63,5 @@ export class GaleriaComponent implements AfterViewInit, OnChanges {
 
   closeImage(): void {
     this.isModalOpen = false;
-  }
-
-  trackByFn(index: number, item: { photoUrl: string }): string {
-    return item.photoUrl;
   }
 }
