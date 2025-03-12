@@ -1,0 +1,23 @@
+<div class="modal-overlay" (click)="fecharModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        <button class="close-btn" (click)="fecharModal()">&times;</button>
+        <div class="modal-inner-content">
+            <div class="img-profissional">
+                <img [src]="profissional.imagem" alt="Foto de {{ profissional.nome }}" class="profile-image" />
+            </div>
+            <h2>{{ profissional.nome }}</h2>
+            <h3>{{ profissional.titulo }}</h3>
+            <h4>{{ profissional.subtitulo }}</h4>
+            <h5>Formação Acadêmica:</h5>
+            <ul>
+                <li *ngFor="let formacao of profissional.formacao">{{ formacao }}</li>
+            </ul>
+            <h5>Público-Alvo:</h5>
+            <ul>
+                <li *ngFor="let publico of profissional.publicoAlvo">{{ publico }}</li>
+            </ul>
+            <h5>Atuação Profissional:</h5>
+            <p>{{ profissional.atuacao }}</p>
+        </div>
+    </div>
+</div>

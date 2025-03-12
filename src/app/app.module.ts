@@ -18,7 +18,10 @@ import { FaqDropdownComponent } from './components/faq-dropdown/faq-dropdown.com
 import { ModalDetalhesComponent } from './modal-detalhes/modal-detalhes.component';
 
 import { LightboxModule } from 'ngx-lightbox';
+import { WelcomeModalComponent } from './components/welcome-modal/welcome-modal.component';
+import { ModalProfissionalComponent } from './components/modal-profissional/modal-profissional.component';
 
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { LightboxModule } from 'ngx-lightbox';
     ProfissionaisComponent,
     GaleriaComponent,
     FaqDropdownComponent,
-    ModalDetalhesComponent
+    ModalDetalhesComponent,
+    WelcomeModalComponent,
+    ModalProfissionalComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,8 @@ import { LightboxModule } from 'ngx-lightbox';
     ReactiveFormsModule,
     CommonModule,
     MatIconModule,
-    LightboxModule
+    LightboxModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

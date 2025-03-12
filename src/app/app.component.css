@@ -21,6 +21,10 @@ app-header {
     margin-bottom: 5px !important;
 }
 
+app-welcome-modal {
+    z-index: 1000000000 !important;
+}
+
 .content-wrapper {
     flex: 1;
     margin: 30px;

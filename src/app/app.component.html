@@ -1,7 +1,8 @@
+<app-welcome-modal></app-welcome-modal>
+
 <app-header (navigateToSection)="scrollToSection($event)"></app-header>
 <div class="page-container">
     <div class="content-wrapper">
-
         <div class="container-principal">
             <div style="padding-top: 90px;" id="quem-somos">
                 <app-home></app-home>
@@ -20,10 +21,7 @@
             </div>
 
             <app-faq-dropdown [faqList]="faqList"></app-faq-dropdown>
-
-
         </div>
-
     </div>
 
     <app-footer (navigateToSection)="scrollToSection($event)"></app-footer>
