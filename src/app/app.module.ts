@@ -22,6 +22,7 @@ import { WelcomeModalComponent } from './components/welcome-modal/welcome-modal.
 import { ModalProfissionalComponent } from './components/modal-profissional/modal-profissional.component';
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { ModalServicoComponent } from './modal-servico/modal-servico.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     FaqDropdownComponent,
     ModalDetalhesComponent,
     WelcomeModalComponent,
-    ModalProfissionalComponent
+    ModalProfissionalComponent,
+    ModalServicoComponent
   ],
   imports: [
     BrowserModule,

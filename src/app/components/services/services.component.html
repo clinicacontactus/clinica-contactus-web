@@ -5,9 +5,13 @@
         <div class="slide" *ngFor="let dado of dados">
             <img [src]="dado.photoUrl" [alt]="dado.titulo" />
             <h3>{{ dado.titulo }}</h3>
-            <!-- <button class="btn-conhecer">
+            <button (click)="abrirModal(dado)" class="btn-conhecer">
                 Saiba mais
-            </button> -->
+            </button>
+
         </div>
     </div>
 </div>
+
+<app-modal-servico *ngIf="mostrarModal && servico" [servico]="servico!" (fechar)="fecharModal()">
+</app-modal-servico>
