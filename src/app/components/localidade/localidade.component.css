@@ -10,16 +10,26 @@
 
 .social-links a {
     display: inline-block;
-    color: #4C6661;
     margin-right: 1rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a i {
     font-size: 2rem !important;
+    color: white;
+    padding: 3px;
+    border-radius: 8px;
 }
 
 .social-links a:hover {
     color: #C1D2CB;
     transform: scale(1.5);
+}
+
+.instagram-icon-bg {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.whatsapp-icon-bg {
+    background-color: #25D366;
 }
