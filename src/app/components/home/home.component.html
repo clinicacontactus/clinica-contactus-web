@@ -65,11 +65,12 @@
 
 </div>
 
-
-<h2>carregando...</h2>
-
-
-<app-galeria [urls]="imagens"></app-galeria>
+<ng-container *ngIf="!finished; else elseTemplate">
+  <h3>Carregando Imagens...</h3>
+</ng-container>
+<ng-template #elseTemplate>
+  <app-galeria [urls]="imagens"></app-galeria>
+</ng-template>
 
 <div class="nosso-objetivo">
     <h2 style="margin-top: 10px;"> Nosso objetivo </h2>

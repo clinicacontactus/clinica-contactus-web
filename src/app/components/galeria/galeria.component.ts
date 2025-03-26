@@ -17,9 +17,7 @@ export class GaleriaComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    setTimeout(() => {
-      this.initSwiper();
-    }, 1000);
+    this.initSwiper()
 
     this.urls.forEach((url, index) => {
       this.lightboxImages.push({
