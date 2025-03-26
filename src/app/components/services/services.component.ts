@@ -125,7 +125,7 @@ export class ServicesComponent {
         },
         {
           question: "Quantas sessões preciso fazer?",
-          answer: "Não há um número exato definido, mas o processo de avaliação psicológica costuma durar entre 5 a 10 sessões. A quantidade de sessões irá depender da demanda e especificidade de cada caso."
+          answer: "Não há um número exato definido, mas o processo de avaliação psicológica costuma durar entre 3 a 5 sessões. A quantidade de sessões irá depender da demanda e especificidade de cada caso."
         },
         {
           question: "Qual o valor da sessão?",
