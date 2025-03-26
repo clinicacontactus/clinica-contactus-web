@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
         this.finished = true;
         clearInterval(this.intervalId);
       }
-    }, 1000);
+    }, 200);
   }
 
   ngOnDestroy() {
