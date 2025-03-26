@@ -145,6 +145,38 @@ export class ServicesComponent {
         }
       ]
 
+    },
+
+    {
+      titulo: 'Grupos de Estimulação Cognitiva',
+      photoUrl: 'assets/imgs/estimulacao.png',
+      faqList: [
+        {
+          question: 'O que são grupos de estimulação cognitiva?',
+          answer: 'Grupos de estimulação cognitiva são intervenções em grupo conduzidas por profissionais da saúde com o objetivo de manter ou melhorar as funções cognitivas, como memória, atenção, raciocínio e linguagem. Por meio de atividades estruturadas, jogos e interações sociais, os participantes exercitam suas habilidades mentais.',
+        },
+        // {
+        //   question: "Quantas sessões preciso fazer?",
+        //   answer: "Não há um número exato definido, mas o processo de avaliação psicológica costuma durar entre 3 a 5 sessões. A quantidade de sessões irá depender da demanda e especificidade de cada caso."
+        // },
+        {
+          question: "Qual o valor da sessão?",
+          answer: "Segundo o código de ética profissional, não podemos divulgar os valores. No entanto, você pode buscar essa informação no nosso WhatsApp."
+        },
+        // {
+        //   question: "Qual a frequência dos atendimentos?",
+        //   answer: "A frequência das sessões é personalizada de acordo com suas demandas. Frequentemente, as sessões acontecem de modo semanal, mas isso pode ser combinado entre você e o profissional escolhido."
+        // },
+        // {
+        //   question: "Quanto tempo dura cada sessão?",
+        //   answer: "As sessões duram cerca de 50 minutos."
+        // },
+        {
+          question: "Atendem por planos de saúde?",
+          answer: "Não atendemos planos de saúde. Porém, aceitamos diversas formas de pagamento e podemos discutir opções de acompanhamento que cabem no seu orçamento."
+        }
+      ]
+
     }
   ];
 
