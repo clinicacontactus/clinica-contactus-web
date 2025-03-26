@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   imagemQuemSomosNos: { photoUrl: string }[] = [];
 
-  seconds = 3;
+  seconds = 2;
   finished = false;
   private intervalId: any;
 
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
     this.intervalId = setInterval(() => {
       if (this.seconds > 0) {
         this.seconds--;
-        console.log(this.seconds)
+
       } else {
         this.finished = true;
         clearInterval(this.intervalId);
