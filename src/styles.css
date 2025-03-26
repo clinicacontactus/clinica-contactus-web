@@ -5,6 +5,12 @@
 @import 'swiper/css/pagination';
 @import 'swiper/css/autoplay';
 
+body.cdk-global-scrollblock {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px !important;

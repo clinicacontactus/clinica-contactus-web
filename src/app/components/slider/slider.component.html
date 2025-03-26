@@ -5,11 +5,12 @@
       <h3>{{ dado.name }}</h3>
       <p>{{ dado.titulo }}</p>
       <p>{{ dado.subtitulo }}</p>
-      <!-- <button class="btn-conhecer" (click)="openModal(dado)">
+      <button class="btn-conhecer" (click)="openModal(dado)">
         Conheça
-      </button> -->
+      </button>
     </div>
   </div>
 </div>
 
-<app-modal-detalhes [isModalOpen]="isModalOpen" [data]="selectedDado" (closed)="closeModal()"></app-modal-detalhes>
+<app-modal-profissional *ngIf="modalAberto" [profissional]="profissionalSelecionado" [isOpen]="modalAberto"
+  (closeModal)="fecharModal()"></app-modal-profissional>

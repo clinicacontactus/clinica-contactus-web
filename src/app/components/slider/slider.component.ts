@@ -1,4 +1,4 @@
-import { Component, Input, SimpleChanges } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -7,48 +7,36 @@ import { Component, Input, SimpleChanges } from '@angular/core';
 })
 export class SliderComponent {
 
-  constructor() { }
+  @Input() dados: { name: string; whatsapp: string; instagram: string; titulo: string; subtitulo: string; photoUrl: string; formacao: string[]; atuacao: string; publicoAlvo: string[] }[] = [];
 
-  isModalOpen = false;
-  selectedDado: any = null;
+  modalAberto: boolean = false;
+
+  profissionalSelecionado: any = null;
 
   openModal(dado: any) {
+    this.profissionalSelecionado = {
+      nome: dado.name,
+      titulo: dado.titulo,
+      subtitulo: dado.subtitulo,
+      imagem: dado.photoUrl,
+      formacao: dado.formacao,
+      atuacao: dado.atuacao,
+      publicoAlvo: dado.publicoAlvo,
 
-    this.selectedDado = dado;
-    this.isModalOpen = true;
+      whatsapp: dado.whatsapp,
+      instagram: dado.instagram,
+    };
+
+    this.modalAberto = true;
+    document.body.style.overflow = 'hidden';
+    document.body.classList.add('no-scroll');
+
   }
 
-  closeModal() {
-    this.isModalOpen = false;
-    this.selectedDado = null;
+  fecharModal() {
+    this.modalAberto = false;
+    document.body.style.overflow = '';
+    document.body.classList.remove('no-scroll');
   }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['dados']) {
-      this.dados.forEach(async (item) => {
-        item.photoUrl = await this.verificarImagem(item.photoUrl);
-      });
-    }
-  }
-
-  private async verificarImagem(url: string): Promise<string> {
-    if (await this.carregaImagem(url)) {
-      return url;
-    }
-
-    const urlCorrigida = url.startsWith('src/') ? url.replace('src/', '') : `src/${url}`;
-    return (await this.carregaImagem(urlCorrigida)) ? urlCorrigida : url;
-  }
-
-  private carregaImagem(url: string): Promise<boolean> {
-    return new Promise(resolve => {
-      const img = new Image();
-      img.onload = () => resolve(true);
-      img.onerror = () => resolve(false);
-      img.src = url;
-    });
-  }
-
-  @Input() dados: { name: string; titulo: string; subtitulo: string; photoUrl: string }[] = [];
 
 }

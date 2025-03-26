@@ -1,0 +1,14 @@
+<div class="modal-overlay" (click)="fecharModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        <button class="close-btn" (click)="fecharModal()">&times;</button>
+        <div class="modal-inner-content">
+            <div class="img-profissional">
+                <img [src]="servico.photoUrl" [alt]="servico.titulo" class="profile-image" />
+            </div>
+            <h2>{{ servico.titulo }}</h2>
+
+            <app-faq-dropdown [faqList]="servico.faqList"></app-faq-dropdown>
+
+        </div>
+    </div>
+</div>

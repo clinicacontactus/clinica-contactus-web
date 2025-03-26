@@ -1,9 +1,10 @@
+<app-welcome-modal></app-welcome-modal>
+
 <app-header (navigateToSection)="scrollToSection($event)"></app-header>
 <div class="page-container">
     <div class="content-wrapper">
-
-        <div class="container-principal">
-            <div style="padding-top: 90px;" id="quem-somos">
+        <div class="container-principal" >
+            <div id="quem-somos">
                 <app-home></app-home>
             </div>
 
@@ -20,15 +21,12 @@
             </div>
 
             <app-faq-dropdown [faqList]="faqList"></app-faq-dropdown>
-
-
         </div>
-
     </div>
 
     <app-footer (navigateToSection)="scrollToSection($event)"></app-footer>
 
-    <a href="https://api.whatsapp.com/send?phone=5585992734914&text=Olá, gostaria de mais informações!"
+    <a href="https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!"
         class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
