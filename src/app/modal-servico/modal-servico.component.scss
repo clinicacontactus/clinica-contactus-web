@@ -80,17 +80,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 5px;
+    top: 2px;
     right: 5px;
-    background: rgb(222, 10, 10);
-    color: white;
+    background: transparent;
+    color: red;
     border-radius: 50%;
     border: none;
-    min-height: 19px;
-    min-width: 19px;
-    max-height: 20px;
-    max-width: 20px;
-    font-size: 18px;
+    font-size: 24px !important;
     cursor: pointer;
     z-index: 100001;
 }
