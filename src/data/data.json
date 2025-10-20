@@ -1,12 +1,12 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Nós somos a Contactus",
+    "paragraph": "Fundada por três psicólogos apaixonados pela profissão, a Contactus nasceu da crença no poder transformador da psicologia para promover qualidade de vida e bem-estar. Nosso trabalho é guiado pelas normas éticas da profissão e pelo conhecimento científico mais atualizado, aliado a recursos personalizados e de alta qualidade."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Na Contactus, o foco está no acolhimento das dificuldades de cada paciente, oferecendo um espaço seguro e empático para o desenvolvimento pessoal. Acreditamos no trabalho conjunto, onde paciente e terapeuta caminham lado a lado em busca de resultados concretos e relevantes, sempre apresentados de forma clara e transparente. Seja para superar desafios emocionais, desenvolver autoconhecimento, alcançar uma vida mais equilibrada ou identificar um diagnóstico preciso, estamos aqui para ajudar você.",
     "Why": [
-      "Lorem ipsum dolor",
+      "kkk ipsum dolor",
       "Tempor incididunt",
       "Lorem ipsum dolor",
       "Incididunt ut labore"
@@ -20,55 +20,25 @@
   },
   "Gallery": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "Project Title 1",
+      "largeImage": "img/imgs/imgs-clinica/1.jpeg",
+      "smallImage":  "img/imgs/imgs-clinica/2.jpeg"
     },
     {
       "title": "Project Title",
       "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "smallImage":  "img/imgs/imgs-clinica/4.jpeg"
     },
     {
       "title": "Project Title",
       "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "smallImage":  "img/imgs/imgs-clinica/3.jpeg"
     }
   ],
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
+      "name": "Avaliação ABA",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     },
     {
@@ -131,29 +101,24 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/imgs/especialistas/Jp.jpeg",
+      "name": "João Pedro Oliveira Freire",
+      "job": "Neuropsi"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
+      "img": "img/imgs/especialistas/Salinas.jpeg",
+      "name": "Psi",
       "job": "Senior Designer"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
+      "img": "img/imgs/especialistas/Mirella.jpeg",
+      "name": "Psi",
       "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
+    "address": "Sala 214, Torre Sul, Edifício Harmony Premium Business, Avenida Humberto Monte, 2929 - Pici, Fortaleza - CE.",
+    "phone": "+55 85 99409-8488",
     "email": "info@company.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
@@ -162,7 +127,7 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
+      "title": "Loremk ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
     {

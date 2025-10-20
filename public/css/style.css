@@ -74,9 +74,10 @@ hr {
 #menu {
   padding: 15px;
   transition: all 0.8s;
+  background-color: #4c6661 !important;
 }
 #menu.navbar-default {
-  background-color: #fff;
+  /* background-color: #fff; */
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -84,13 +85,13 @@ hr {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  /* color: #ffffff; */
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #555;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 400;
   padding: 8px 2px;
@@ -104,7 +105,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #ffffff 0%, #5dc46c 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -166,8 +167,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: #A0BCB5;
+  background-image: linear-gradient(to right, #A0BCB5 0%, #4C6661 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -184,7 +185,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #4C6661;
 }
 .btn:active,
 .btn.active {
@@ -208,7 +209,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  background: url(../img/intro-img-bg.jpg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -460,7 +461,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #4c6661 0%, #88c1b5 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {

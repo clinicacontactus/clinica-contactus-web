@@ -15,14 +15,14 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
+
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
     emailjs
       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
       .then(
@@ -42,13 +42,13 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
-                <p>
+                <h2>Fale conosco</h2>
+                {/* <p>
                   Please fill out the form below to send us an email and we will
                   get back to you as soon as possible.
-                </p>
+                </p> */}
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              {/* <form name="sentMessage" validate onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -95,35 +95,52 @@ export const Contact = (props) => {
                 <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
-              </form>
-            </div>
-          </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
-              <h3>Contact Info</h3>
+              </form> */}
+              <div className="contact-item">
+                {/* <h3>Informações de contato</h3> */}
+                <p>
+                  <span>
+                    <i className="fa fa-map-marker"></i> Endereço
+                  </span>
+                  {props.data ? props.data.address : "loading"}
+                </p>
+              </div>
+                <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> Telefone
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
             </div>
+            </div>
+          </div>
+          <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
+              {/* <h3>Informações de contato</h3> */}
+              {/* <p>
+                <span>
+                  <i className="fa fa-map-marker"></i> Endereço
+                </span>
+                {props.data ? props.data.address : "loading"}
+              </p> */}
+            </div>
+            {/* <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-phone"></i> Telefone
+                </span>{" "}
+                {props.data ? props.data.phone : "loading"}
+              </p>
+            </div> */}
+            {/* <div className="contact-item">
               <p>
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="col-md-12">
             <div className="row">
@@ -150,7 +167,7 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      <div id="footer">
+      {/* <div id="footer">
         <div className="container text-center">
           <p>
             &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
@@ -159,7 +176,7 @@ export const Contact = (props) => {
             </a>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

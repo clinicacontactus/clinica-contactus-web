@@ -1124,6 +1124,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-header{
+  max-width: 20%;
+}
 .img-rounded {
   border-radius: 6px;
 }
