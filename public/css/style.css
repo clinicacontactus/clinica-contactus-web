@@ -5,7 +5,7 @@ html {
   -webkit-font-smoothing: antialiased !important;
   color: #777;
   font-weight: 400;
-  width: 100% !important;
+  max-width: 100% !important;
   height: 100% !important;
   background-color: #E8E0D6;
   overflow-x: hidden;
@@ -325,31 +325,13 @@ header .intro-text {
 }
 
 @media (max-width: 400px) {
+  .img-sobre {
+    max-width: 330px;
+  }
 
-.img-sobre{max-width: 330px;}
-
-  
-  .intro {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-color: #e5e5e5;
-}
-
-.intro::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw; 
-  height: 100%;
-  background: url(../img/intro-img-bg.jpg) center center no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
+  .teste-p {
+    padding: 0 40px 0 10px;
+  }
 
 }
 
