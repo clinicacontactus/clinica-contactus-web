@@ -326,6 +326,8 @@ header .intro-text {
 
 @media (max-width: 400px) {
 
+.img-sobre{max-width: 330px;}
+
   
   .intro {
   position: relative;

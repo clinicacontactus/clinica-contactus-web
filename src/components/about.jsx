@@ -5,10 +5,10 @@ export const About = (props) => {
     <div id="about">
       <div className="container">
         <div className="row">
-          {/* <div className="col-xs-12 col-md-6">
+          <div className="col-xs-12 col-md-6 img-sobre">
             {" "}
             <img src="/img/imgs/imgs-clinica/1.jpeg" className="img-responsive" alt="" />{" "}
-          </div> */}
+          </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>Sobre nós</h2>
