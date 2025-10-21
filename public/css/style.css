@@ -8,7 +8,7 @@ html {
   max-width: 100% !important;
   height: 100% !important;
   background-color: #E8E0D6;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h2,
@@ -252,7 +252,7 @@ a:focus,
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 
@@ -318,9 +318,9 @@ header .intro-text {
   }
 
 
-  .intro .container {
+  /* .intro .container {
     padding: 0 10px;
-  }
+  } */
 
 }
 
@@ -331,6 +331,11 @@ header .intro-text {
 
   .teste-p {
     padding: 0 40px 0 10px;
+  }
+
+  html,body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
 }
