@@ -103,17 +103,17 @@
     {
       "img": "img/imgs/especialistas/Jp.jpeg",
       "name": "João Pedro Oliveira Freire",
-      "job": "Neuropsi"
+      "job": "Neuropsicólogo Clínico e Psicoterapeuta"
     },
     {
       "img": "img/imgs/especialistas/Salinas.jpeg",
-      "name": "Psi",
-      "job": "Senior Designer"
+      "name": "Salinas Aerolineas Moisés Rocha Freitas",
+      "job": "Psicóloga Clínica e Supervisora ABA"
     },
     {
       "img": "img/imgs/especialistas/Mirella.jpeg",
-      "name": "Psi",
-      "job": "Senior Designer"
+      "name": "Mirella de Sousa Oliveira",
+      "job": "Psicóloga Clínica e Supervisora ABA"
     }
   ],
   "Contact": {
