@@ -8,7 +8,7 @@ html {
   max-width: 100% !important;
   height: 100% !important;
   background-color: #E8E0D6;
-  /* overflow-x: hidden; */
+  overflow-x: clip;
 }
 
 h2,
@@ -333,10 +333,6 @@ header .intro-text {
     padding: 0 40px 0 10px;
   }
 
-  html,body {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
 
 }
 
