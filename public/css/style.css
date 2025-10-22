@@ -87,15 +87,38 @@ hr {
 
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 10px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   transition: all 0.8s;
-  background-color: #4c6661 !important;
+  background-color: white !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: visible !important;
+}
+
+#menu .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+#menu .container {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center !important;
+  justify-content: space-between; /* separa logo e menu */
+  width: 100%;
+  white-space: nowrap !important;        /* impede quebra de linha */
+  flex-wrap: nowrap !important;          /* garante que o flex nunca quebre */
+  overflow: visible !important;
+
 }
 
 #menu.navbar-default {
-  /* background-color: #fff; */
+  background-color: white;
   border-color: rgba(231, 231, 231, 0);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 #menu a.navbar-brand {
@@ -109,9 +132,9 @@ hr {
 #menu.navbar-default .navbar-nav>li>a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 400;
+  color: #4c6661;
+  font-size: 18px;
+  font-weight: bold;
   padding: 8px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
@@ -166,6 +189,7 @@ hr {
 .navbar-default .navbar-toggle:hover>.icon-bar {
   background-color: #608dfd;
 }
+
 
 .section-title {
   margin-bottom: 70px;
