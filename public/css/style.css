@@ -103,16 +103,41 @@ hr {
   align-items: center;
 }
 
-#menu .container {
-  display: flex !important;
-  flex-direction: row;
-  align-items: center !important;
-  justify-content: space-between; /* separa logo e menu */
-  width: 100%;
-  white-space: nowrap !important;        /* impede quebra de linha */
-  flex-wrap: nowrap !important;          /* garante que o flex nunca quebre */
-  overflow: visible !important;
+@media (min-width: 990px) {
+  #menu .container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    overflow-x: auto !important; /* permite rolar se ficar grande demais */
+  }
 
+  #menu .container > * {
+    /* flex: 0 0 auto !important; impede os itens de crescerem ou encolherem */
+    white-space: nowrap !important; /* impede que texto quebre linha */
+  }
+}
+
+@media (max-width: 990px) {
+ .navbar-header {
+  
+  width: 100vw !important;
+  
+}
+}
+
+.img-header {
+  max-width: 200px;
+}
+
+.navbar-header {
+  display: flex !important;
+  flex-direction: row !important;
+  /* width: 100vw !important; */
+  justify-content: space-between !important;
+   white-space: nowrap !important;
 }
 
 #menu.navbar-default {
@@ -317,8 +342,7 @@ header .intro-text {
   text-align: center;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .intro h1 {
     font-size: 40px;
   }
@@ -778,7 +802,7 @@ label {
   border-bottom: 2px solid #608dfd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   #about img {
     margin: 50px 0;
   }
