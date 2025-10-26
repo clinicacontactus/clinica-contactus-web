@@ -5,8 +5,8 @@ export const Navigation = (props) => {
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
         <div className="navbar-header">
-        
-            <img src="img/imgs/new-logo.png" className="img-header" alt="" />{" "}
+
+          <img src="img/imgs/new-logo.png" className="img-header" alt="" />{" "}
 
           <button
             type="button"
@@ -38,6 +38,13 @@ export const Navigation = (props) => {
                 Serviços
               </a>
             </li>
+
+            <li>
+              <a href="#team" className="page-scroll">
+                Profissionais
+              </a>
+            </li>
+
             <li>
               <a href="#about" className="page-scroll">
                 Sobre nós
@@ -53,11 +60,7 @@ export const Navigation = (props) => {
                 Avaliações
               </a>
             </li> */}
-            <li>
-              <a href="#team" className="page-scroll">
-                Profissionais
-              </a>
-            </li>
+
             <li>
               <a href="#contact" className="page-scroll">
                 Onde nos encontrar

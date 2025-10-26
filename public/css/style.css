@@ -409,6 +409,10 @@ header .intro-text {
   padding: 0 0 50px 0;
 }
 
+#header {
+  padding: 0 0 50px 0;
+}
+
 #about h3 {
   font-size: 22px;
   margin: 0 0 20px;
@@ -466,7 +470,7 @@ h2{
 
 /* Services Section */
 #services {
-  margin-top: 90px;
+  margin-top: 40px;
   padding: 100px 0;
   background: linear-gradient(to right, #4C6661 0%, #A0BCB5 100%);
   color: #fff;
@@ -620,7 +624,7 @@ h2{
 
 /* Team Section */
 #team {
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 #team h4 {

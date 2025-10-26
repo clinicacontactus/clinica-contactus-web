@@ -15,7 +15,7 @@ import "./App.css";
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800, 
   speedAsDuration: true,
-  offset: 40, 
+  offset: 100, 
   easing: 'easeInOutCubic',
   updateURL: false, 
 });
@@ -38,12 +38,13 @@ const App = () => {
 
         <Services data={landingPageData.Services} />
 
+        <Team data={landingPageData.Team} />
+
         <Header data={landingPageData.Header} />
 
         <About data={landingPageData.About} />
         {/* <Gallery data={landingPageData.Gallery} /> */}
         {/* <Testimonials data={landingPageData.Testimonials} /> */}
-        <Team data={landingPageData.Team} />
 
       </div>
 
