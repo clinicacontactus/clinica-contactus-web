@@ -122,7 +122,9 @@
     "email": "info@company.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "youtube": "youtube.com",
+    "whatsapp": "https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!",
+    "instagram": "https://www.instagram.com/clinicacontactus"
   },
   "Features": [
     {
