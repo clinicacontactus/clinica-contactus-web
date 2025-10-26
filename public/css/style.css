@@ -406,18 +406,23 @@ header .intro-text {
 
 /* About Section */
 #about {
-  padding:  0;
+  padding: 0 0 50px 0;
 }
 
 #about h3 {
   font-size: 22px;
   margin: 0 0 20px;
+
 }
 
 #about h2 {
   position: relative;
   margin-bottom: 15px;
   padding-bottom: 15px;
+}
+
+h2{
+  margin-top: 15px;
 }
 
 #about h2::after {
@@ -615,7 +620,7 @@ header .intro-text {
 
 /* Team Section */
 #team {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 #team h4 {
