@@ -13,11 +13,11 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 800, // Reduzindo um pouco a velocidade
+  speed: 800, 
   speedAsDuration: true,
-  offset: 50, // Adicionando offset para compensar a navbar fixa
-  easing: 'easeInOutCubic', // Adicionando easing para suavizar
-  updateURL: false, // Evita que atualize a URL durante o scroll
+  offset: 40, 
+  easing: 'easeInOutCubic',
+  updateURL: false, 
 });
 
 const App = () => {
@@ -31,14 +31,17 @@ const App = () => {
 
 
       <Navigation />
-      <Header data={landingPageData.Header} />
+      {/* <Header data={landingPageData.Header} /> */}
 
       <div className="teste-p">
         {/* <Features data={landingPageData.Features} /> */}
 
+        <Services data={landingPageData.Services} />
+
+        <Header data={landingPageData.Header} />
+
         <About data={landingPageData.About} />
-        {/* <Services data={landingPageData.Services} /> */}
-        <Gallery data={landingPageData.Gallery} />
+        {/* <Gallery data={landingPageData.Gallery} /> */}
         {/* <Testimonials data={landingPageData.Testimonials} /> */}
         <Team data={landingPageData.Team} />
 

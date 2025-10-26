@@ -406,7 +406,7 @@ header .intro-text {
 
 /* About Section */
 #about {
-  padding: 100px 0;
+  padding:  0;
 }
 
 #about h3 {
@@ -461,6 +461,7 @@ header .intro-text {
 
 /* Services Section */
 #services {
+  margin-top: 90px;
   padding: 100px 0;
   background: linear-gradient(to right, #4C6661 0%, #A0BCB5 100%);
   color: #fff;

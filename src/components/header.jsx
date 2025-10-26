@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = (props) => {
   return (
-    <header id="header">
+    <header id="about">
       <div className="intro">
         <div className="overlay">
           <div className="container">
@@ -14,7 +14,7 @@ export const Header = (props) => {
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
                 <a
-                  href="#about"
+                  href="#header"
                   className="btn btn-custom btn-lg page-scroll"
                 >
                   Saiba Mais
