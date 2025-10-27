@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = (props) => {
   return (
-    <div id="header">
+    <div id="about">
 
       <div className="container">
         <div className="row">
