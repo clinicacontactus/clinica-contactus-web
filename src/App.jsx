@@ -12,6 +12,7 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import FAQ from "./components/FAQ";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -55,6 +56,8 @@ const App = () => {
         <FAQ></FAQ>
 
         <Contact data={landingPageData.Contact} />
+
+        <WhatsAppButton></WhatsAppButton>
 
       </div>
 
