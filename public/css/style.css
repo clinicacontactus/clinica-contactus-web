@@ -319,7 +319,7 @@ a:focus,
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 60px;
+  font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -340,7 +340,9 @@ a:focus,
 }
 
 .p1 {
+  font-size: 30px !important;
   font-weight: bold !important;
+  padding-bottom: 50px;
 }
 
 header .intro-text {

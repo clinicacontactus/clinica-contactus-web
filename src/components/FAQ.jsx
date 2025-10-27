@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const faqs = [
-      {
-        question: "Como funciona o atendimento?",
-        answer:
-          "O atendimento é feito por meio de sessões online ou presenciais, com duração média de 50 minutos.",
-      },
+    //   {
+    //     question: "Como funciona o atendimento?",
+    //     answer:
+    //       "O atendimento é feito por meio de sessões online ou presenciais, com duração média de 50 minutos.",
+    //   },
     //   {
     //     question: "Posso remarcar uma sessão?",
     //     answer:
@@ -20,10 +20,10 @@ const faqs = [
     //     question: "O que é a psicoterapia?",
     //     answer: "A psicoterapia é um processo terapêutico conduzido por um profissional qualificado (psicólogo ou psiquiatra) que visa ajudar as pessoas a compreenderem e lidarem com questões emocionais, comportamentais, mentais ou relacionais. Através de diálogo e técnicas específicas, o terapeuta auxilia o paciente a explorar pensamentos, sentimentos e padrões de comportamento, promovendo autoconhecimento, mudanças positivas e bem-estar mental. É um espaço seguro e confidencial para trabalhar desafios pessoais, traumas, ansiedade, depressão, entre outras questões."
     // },
-    {
-        question: "Quantas sessões preciso fazer?",
-        answer: "Não podemos informar um período exato de tempo para obtenção dos resultados esperados, uma vez que isso depende da demanda, do vínculo terapêutico e outras variáveis presentes durante os atendimentos. Para mais informações, busque se informar com o profissional que escolher."
-    },
+    // {
+    //     question: "Quantas sessões preciso fazer?",
+    //     answer: "Não podemos informar um período exato de tempo para obtenção dos resultados esperados, uma vez que isso depende da demanda, do vínculo terapêutico e outras variáveis presentes durante os atendimentos. Para mais informações, busque se informar com o profissional que escolher."
+    // },
     {
         question: "Qual o valor da sessão?",
         answer: "Segundo o código de ética profissional, não podemos divulgar os valores. No entanto, você pode buscar essa informação no nosso WhatsApp."

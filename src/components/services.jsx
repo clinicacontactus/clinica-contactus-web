@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaWhatsapp } from "react-icons/fa";
 
 import { faUserMd, faChild, faBrain, faStethoscope, faUsers, faBuilding } from '@fortawesome/free-solid-svg-icons';
 
@@ -48,6 +49,16 @@ export const Services = (props) => {
             ))
             : "loading"}
         </div>
+        <h1>Gostou de nossos serviços? Entre em contato e agende sua consulta!</h1>
+        <a
+          href="https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!"
+          className="btn btn-whatsapp btn-lg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp style={{ marginRight: "8px" }} />
+          Fale conosco
+        </a>
       </div>
     </div>
   );
