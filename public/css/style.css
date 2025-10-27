@@ -376,14 +376,18 @@ header .intro-text {
     line-height: 20px;
   }
 
+  /* .intro .container {
+    padding: 0 10px;
+  } */
+
+}
+
+@media (max-width: 550px) {
+  
   .botoes {
     max-width: 90%;
     flex-direction: column !important;
   }
-
-  /* .intro .container {
-    padding: 0 10px;
-  } */
 
 }
 
