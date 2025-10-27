@@ -55,11 +55,11 @@ export const Navigation = (props) => {
                 Nossa Clínica
               </a>
             </li> */}
-            {/* <li>
+            <li>
               <a href="#testimonials" className="page-scroll">
                 Avaliações
               </a>
-            </li> */}
+            </li>
 
             <li>
               <a href="#contact" className="page-scroll">
