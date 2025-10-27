@@ -497,6 +497,11 @@ h2 {
   margin: 10px 10px 20px;
 }
 
+.service-desc p {
+  text-align: justify;
+}
+
+
 #services h2 {
   color: #fff;
 }
