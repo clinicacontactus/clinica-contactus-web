@@ -51,7 +51,7 @@ p {
 
 p.intro {
   margin: 12px 0 0;
-  line-height: 24px;
+  /* line-height: 24px; */
 }
 
 a {
@@ -319,7 +319,7 @@ a:focus,
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -333,15 +333,15 @@ a:focus,
 
 .intro p {
   color: #fff;
-  font-size: 22px;
+  font-size: 25px !important;
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
 }
 
 .p1 {
-  font-size: 30px !important;
-  font-weight: bold !important;
+  /* font-size: 30px !important; */
+  /* font-weight: bold !important; */
   padding-bottom: 50px;
 }
 
@@ -357,12 +357,12 @@ header .intro-text {
 
 @media (max-width: 990px) {
   .intro h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .intro p {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 20px;
+    /* line-height: 25px; */
   }
 
 
@@ -370,12 +370,12 @@ header .intro-text {
 
 @media (max-width: 450px) {
   .intro h1 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .intro p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 13px;
+    /* line-height: 20px; */
   }
 
   /* .intro .container {
