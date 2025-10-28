@@ -38,7 +38,7 @@ const faqs = [
     // },
     {
         question: "Atendem por planos de saúde?",
-        answer: "Não atendemos planos de saúde. Porém, aceitamos diversas formas de pagamento e podemos discutir opções de acompanhamento que cabem no seu orçamento."
+        answer: "Atualmente não atendemos diretamente por convênios, mas emitimos nota fiscal para que você possa solicitar reembolso junto ao seu plano de saúde. Além disso, trabalhamos com diferentes formas de pagamento e buscamos opções que se encaixem no seu orçamento."
     }
 ];
 

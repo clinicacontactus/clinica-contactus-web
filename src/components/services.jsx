@@ -49,7 +49,7 @@ export const Services = (props) => {
             ))
             : "loading"}
         </div>
-        <h1>Está buscando apoio profissional? Entre em contato com a gente!</h1>
+        <h1>Está buscando apoio profissional? Entre em contato conosco!</h1>
         <a
           href="https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!"
           className="btn btn-whatsapp btn-lg"
