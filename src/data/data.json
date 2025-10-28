@@ -3,7 +3,6 @@
     "title": "Bem-vindo à Contactus!",
     "paragraph": "Excelência em Psicoterapia, Avaliação Neuropsicológica e Terapia ABA",
     "paragraph2": "Serviços conduzidos com rigor científico e compromisso com o cuidado integral"
-
   },
   "About": {
     "paragraph": "Na Contactus, o foco está no acolhimento das dificuldades de cada paciente, oferecendo um espaço seguro e empático para o desenvolvimento pessoal. Acreditamos no trabalho conjunto, onde paciente e terapeuta caminham lado a lado em busca de resultados concretos e relevantes, sempre apresentados de forma clara e transparente. Seja para superar desafios emocionais, desenvolver autoconhecimento, alcançar uma vida mais equilibrada ou identificar um diagnóstico preciso, estamos aqui para ajudar você.",
@@ -88,19 +87,25 @@
   ],
   "Team": [
     {
-      "img": "img/imgs/especialistas/Jp.jpeg",
+      "img": "img/imgs/especialistas/jp3.jpeg",
       "name": "João Pedro Oliveira Freire",
-      "job": "Neuropsicólogo Clínico e Psicoterapeuta"
+      "job": "Neuropsicólogo Clínico e Psicoterapeuta",
+      "crp": "CRP 11/18847",
+      "formacoes": "Graduado em Psicologia. Especialista em Neuropsicologia pela UNICHRISTUS. Mestrando em Medicina Translacional pela UFC."
     },
     {
       "img": "img/imgs/especialistas/Salinas2.jpeg",
       "name": "Salinas Aerolineas Moisés Rocha Freitas",
-      "job": "Psicóloga Clínica e Supervisora ABA"
+      "job": "Psicóloga Clínica e Supervisora ABA",
+      "crp": "CRP 11/18942",
+      "formacoes": "Psicóloga especializada em Terapia Cognitivo-Comportamental (TCC) e Análise do Comportamento Aplicada (ABA). Pós-graduanda em Neuropsicologia. Mestranda em Psicologia."
     },
     {
       "img": "img/imgs/especialistas/Mirella3.jpeg",
       "name": "Mirella de Sousa Oliveira",
-      "job": "Psicóloga Clínica e Supervisora ABA"
+      "job": "Psicóloga Clínica e Supervisora ABA",
+      "crp": "CRP 11/19015",
+      "formacoes": "Psicóloga Clínica, especialista em Análise do Comportamento Aplicada (ABA). Especialização em Gestalt-Terapia e Educação Inclusiva."
     }
   ],
   "Contact": {

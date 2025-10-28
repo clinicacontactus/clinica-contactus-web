@@ -659,7 +659,12 @@ h2 {
 #team .team-img {
   width: 245px;
   height: 360px;
+  object-fit: cover;
+  object-position: center; /* centraliza o corte */
+  border-radius: 8px; /* opcional, se quiser cantos arredondados */
+  overflow: hidden;
 }
+
 
 #team .thumbnail {
   background: transparent;
