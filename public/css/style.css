@@ -7,7 +7,9 @@ html {
   font-weight: 400;
   max-width: 100% !important;
   height: 100% !important;
-  background-color: #E8E0D6;
+  /* background-color: #E8E0D6; */
+  background-color: #e2deda;
+
   overflow-x: clip;
 }
 
@@ -649,7 +651,9 @@ h2 {
 /* Team Section */
 #team {
   padding: 70px 0;
-  background-color: white;
+  /* background-color: white; */
+  background-color: #e2deda;
+
 }
 
 #team h4 {
