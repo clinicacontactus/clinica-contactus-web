@@ -1171,3 +1171,8 @@ label {
     height: 30px !important;
   } */
 }
+
+.cnpj {
+  font-weight: bold;
+  margin-bottom: 20px;
+}

@@ -105,14 +105,14 @@ export const Contact = (props) => {
                   {props.data ? props.data.address : "loading"}
                 </p>
               </div>
-                <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Telefone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
-            </div>
+              <div className="contact-item">
+                <p>
+                  <span>
+                    <i className="fa fa-phone"></i> Telefone
+                  </span>{" "}
+                  {props.data ? props.data.phone : "loading"}
+                </p>
+              </div>
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
@@ -144,7 +144,10 @@ export const Contact = (props) => {
           </div>
           <div className="col-md-12">
             <div className="row">
+
               <div className="social">
+                <p className="cnpj">CNPJ: 61.338.931/0001-99</p>
+
                 <ul>
                   <li>
                     <a href={props.data ? props.data.instagram : "/"}>
