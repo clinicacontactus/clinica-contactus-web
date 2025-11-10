@@ -29,7 +29,9 @@ export const Services = (props) => {
             ? props.data.map((d, i) => (
               <div key={`${d.name}-${i}`} className="col-md-4">
                 <FontAwesomeIcon
+                
                   icon={ICONS_MAP[d.icon]}
+                  className="service-icon"
                   size="4x"
                   style={{
                     backgroundColor: '#A0BCB5',

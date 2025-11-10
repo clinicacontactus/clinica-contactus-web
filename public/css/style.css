@@ -1176,3 +1176,13 @@ label {
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+.service-icon {
+  font-size: 40px !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+#services .svg-inline--fa {
+  font-size: 40px !important;
+}
