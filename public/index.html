@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Ícones existentes -->
-    <link rel="shortcut icon" href="img/imgs/favicons/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.google.com https://www.google.com.br; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.google.com https://www.google.com.br; img-src 'self' data: https://www.google-analytics.com https://www.google.com https://www.google.com.br https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.googletagmanager.com https://www.google.com https://www.google.com.br;">
 
-    <!-- CSS existente -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css" />
-    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Título e SEO antigo -->
-    <title>Clínica Contactus - Psicologia Especializada em Fortaleza</title>
-    <meta name="description" content="Clínica Contactus - Psicologia em Fortaleza. Especialistas em TEA, neuropsicologia e supervisão ABA e psicologia clínica." />
-    <meta name="keywords" content="psicologia, TEA, autismo, neuropsicologia, psicologia clinica, ABA, supervisão ABA, terapia comportamental, clínica de psicologia, saúde mental, Fortaleza, atendimento psicológico" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Clínica Contactus" />
+  <!-- Ícones existentes -->
+  <link rel="shortcut icon" href="img/imgs/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Clínica Contactus - Psicologia Especializada em Fortaleza" />
-    <meta property="og:description" content="Especialistas em TEA, neuropsicologia e supervisão ABA e psicologia clínica. Atendimento humanizado e especializado para todas as idades." />
-    <meta property="og:image" content="%PUBLIC_URL%/assets/imgs/favicons/logo-contactus-icon.png?v=2" />
-    <meta property="og:url" content="https://www.clinicacontactus.com/" />
-    <meta property="og:type" content="website" />
+  <!-- CSS existente -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css" />
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Clínica Contactus - Psicologia em Fortaleza" />
-    <meta name="twitter:description" content="Especialistas em TEA, neuropsicologia e supervisão ABA e psicologia clínica. Atendimento humanizado para todas as idades." />
-    <meta name="twitter:image" content="%PUBLIC_URL%/assets/imgs/favicons/logo-contactus-icon.png?v=2" />
+  <!-- Título e SEO antigo -->
+  <title>Clínica Contactus - Psicologia Especializada em Fortaleza</title>
+  <meta name="description"
+    content="Clínica Contactus - Psicologia em Fortaleza. Especialistas em TEA, neuropsicologia e supervisão ABA e psicologia clínica." />
+  <meta name="keywords"
+    content="psicologia, TEA, autismo, neuropsicologia, psicologia clinica, ABA, supervisão ABA, terapia comportamental, clínica de psicologia, saúde mental, Fortaleza, atendimento psicológico" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Clínica Contactus" />
 
-    <!-- Google Tag / Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZK57LK2TY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-8ZK57LK2TY');
-    </script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Clínica Contactus - Psicologia Especializada em Fortaleza" />
+  <meta property="og:description"
+    content="Especialistas em TEA, neuropsicologia e supervisão ABA e psicologia clínica. Atendimento humanizado e especializado para todas as idades." />
+  <meta property="og:image" content="%PUBLIC_URL%/assets/imgs/favicons/logo-contactus-icon.png?v=2" />
+  <meta property="og:url" content="https://www.clinicacontactus.com/" />
+  <meta property="og:type" content="website" />
 
-    <!-- Google Ads Conversion -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17045311975/A8K9CK79oM4aEOej678_',
-            'event_callback': callback
-        });
-        return false;
-      }
-    </script>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clínica Contactus - Psicologia em Fortaleza" />
+  <meta name="twitter:description"
+    content="Especialistas em TEA, neuropsicologia e supervisão ABA e psicologia clínica. Atendimento humanizado para todas as idades." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/assets/imgs/favicons/logo-contactus-icon.png?v=2" />
 
-    <!-- JSON-LD (SEO Local) -->
-    <script type="application/ld+json">
+  <!-- Google Tag / Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZK57LK2TY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-8ZK57LK2TY');
+  </script>
+
+  <!-- Google Ads Conversion -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17045311975/A8K9CK79oM4aEOej678_',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+  <!-- JSON-LD (SEO Local) -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
@@ -88,13 +96,14 @@
       "sameAs": ["https://www.instagram.com/clinicacontactus"]
     }
     </script>
-  </head>
+</head>
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <div id="root"></div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="root"></div>
 
-    <!-- Scripts JS antigos -->
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-  </body>
+  <!-- Scripts JS antigos -->
+  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
 </html>
