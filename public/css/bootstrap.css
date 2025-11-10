@@ -12,6 +12,21 @@ html {
 body {
   margin: 0;
 }
+
+.service-icon {
+  font-size: 40px !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+#services .svg-inline--fa {
+  font-size: 40px !important;
+}
+.svg-inline--fa {
+  font-size: 50px !important;
+}
+
+
 article,
 aside,
 details,

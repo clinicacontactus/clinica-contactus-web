@@ -12,8 +12,7 @@
   ],
   "build": {
     "env": {
-      "CI": "false",
-     "cssCodeSplit": false
+      "CI": "false"
     }
   }
 }
