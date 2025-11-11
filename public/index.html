@@ -6,7 +6,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
- <meta http-equiv="Content-Security-Policy" content="
+  <meta http-equiv="Content-Security-Policy" content="
   default-src 'self' data:;
   script-src 'self' 'unsafe-inline' 'unsafe-eval'
     https://*.googletagmanager.com
@@ -86,15 +86,38 @@
   <meta name="twitter:image" content="%PUBLIC_URL%/assets/imgs/favicons/logo-contactus-icon.png?v=2" />
 
   <!-- Google Tag / Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZK57LK2TY"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZK57LK2TY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-8ZK57LK2TY');
+  </script> -->
+
+  <!-- Google Analytics 4 -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CHV8LS24Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-4CHV8LS24Q');
+  </script> -->
+
+  <!-- Google Tag / GA4 + Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CHV8LS24Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    // GA4
+    gtag('config', 'G-4CHV8LS24Q');
+
+    // Google Ads
+    gtag('config', 'AW-17045311975');
   </script>
 
-  <!-- Google Ads Conversion -->
+  <!-- Função para conversão de Ads -->
   <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -110,11 +133,28 @@
     }
   </script>
 
-  <script>
+
+  <!-- Google Ads Conversion -->
+  <!-- <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17045311975/A8K9CK79oM4aEOej678_',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script> -->
+
+  <!-- <script>
     gtag('config', 'G-8ZK57LK2TY');
     gtag('config', 'AW-17045311975');
   </script>
-
+ -->
 
 
   <!-- JSON-LD (SEO Local) -->
