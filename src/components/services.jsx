@@ -4,6 +4,12 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import { faUserMd, faChild, faBrain, faStethoscope, faUsers, faBuilding } from '@fortawesome/free-solid-svg-icons';
 
+import { reportWhatsAppConversion } from "../utils/ads";
+
+const WHATSAPP_NUMBER = "5585994098488";
+const MESSAGE = "Olá, gostaria de mais informações!";
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(MESSAGE)}`;
+
 export const ICONS_MAP = {
   "fa fa-user-md": faUserMd,
   "fa fa-child": faChild,
@@ -29,7 +35,7 @@ export const Services = (props) => {
             ? props.data.map((d, i) => (
               <div key={`${d.name}-${i}`} className="col-md-4">
                 <FontAwesomeIcon
-                
+
                   icon={ICONS_MAP[d.icon]}
                   className="service-icon"
                   size="4x"
@@ -53,6 +59,18 @@ export const Services = (props) => {
         </div>
         <h1>Está buscando apoio profissional? Entre em contato conosco!</h1>
         <a
+          href="#"
+          className="btn btn-whatsapp btn-lg"
+          onClick={(e) => {
+            e.preventDefault();
+            reportWhatsAppConversion(whatsappUrl);
+          }}
+        >
+          <FaWhatsapp style={{ marginRight: "8px" }} />
+          Fale conosco
+        </a>
+
+        {/* <a
           href="https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!"
           className="btn btn-whatsapp btn-lg"
           target="_blank"
@@ -60,7 +78,7 @@ export const Services = (props) => {
         >
           <FaWhatsapp style={{ marginRight: "8px" }} />
           Fale conosco
-        </a>
+        </a> */}
       </div>
     </div>
   );
