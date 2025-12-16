@@ -23,7 +23,7 @@ const WHATSAPP_NUMBER = "5585994098488";
 const PRE_FILLED_MESSAGE = "Olá, gostaria de mais informações!";
 
 const WhatsAppButton = () => {
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}&text=${encodeURIComponent(
     PRE_FILLED_MESSAGE
   )}`;
 
