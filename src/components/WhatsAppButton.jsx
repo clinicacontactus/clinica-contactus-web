@@ -1,15 +1,20 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 function gtag_report_conversion(url) {
+  let redirected = false;
+
   const callback = () => {
-    if (typeof url !== "undefined") {
-      window.open(url, "_blank");
-    }
+    if (redirected) return;
+    redirected = true;
+    window.open(url, "_blank");
   };
+
+  // Fallback: Ads nunca pode travar o CTA
+  setTimeout(callback, 700);
 
   if (typeof window.gtag === "function") {
     window.gtag("event", "conversion", {
-      send_to: "AW-17045311975/A8K9CK79oM4aEOej678_", 
+      send_to: "AW-17045311975/A8K9CK79oM4aEOej678_",
       event_callback: callback,
     });
   } else {
@@ -23,7 +28,7 @@ const WHATSAPP_NUMBER = "5585994098488";
 const PRE_FILLED_MESSAGE = "Olá, gostaria de mais informações!";
 
 const WhatsAppButton = () => {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}&text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
     PRE_FILLED_MESSAGE
   )}`;
 
