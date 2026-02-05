@@ -664,8 +664,10 @@ h2 {
   width: 245px;
   height: 360px;
   object-fit: cover;
-  object-position: center; /* centraliza o corte */
-  border-radius: 8px; /* opcional, se quiser cantos arredondados */
+  object-position: center;
+  /* centraliza o corte */
+  border-radius: 8px;
+  /* opcional, se quiser cantos arredondados */
   overflow: hidden;
 }
 
@@ -1178,14 +1180,44 @@ label {
 }
 
 .service-icon {
-  font-size: 40px !important;
-  width: 50px !important;
-  height: 50px !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 
-#services .svg-inline--fa {
-  font-size: 40px !important;
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
-.svg-inline--fa {
-  font-size: 50px !important;
+
+.service-card {
+  background-color: #a0bcb552;
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  /* grid garante altura igual */
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.25);
+  transition: transform 0.3s ease;
+}
+
+.service-desc {
+  flex: 1;
 }

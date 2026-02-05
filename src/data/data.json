@@ -38,9 +38,9 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-user-md",
-      "name": "Psicoterapia",
-      "text": "A psicoterapia é um processo terapêutico conduzido por um profissional qualificado (psicólogo ou psiquiatra) que visa ajudar as pessoas a compreenderem e lidarem com questões emocionais, comportamentais, mentais ou relacionais. Através de diálogo e técnicas específicas, o terapeuta auxilia o paciente a explorar pensamentos, sentimentos e padrões de comportamento, promovendo autoconhecimento, mudanças positivas e bem-estar mental. É um espaço seguro e confidencial para trabalhar desafios pessoais, traumas, ansiedade, depressão, entre outras questões."
+      "icon": "fa fa-brain",
+      "name": "Avaliação Neuropsicológica",
+      "text": "A avaliação neuropsicológica é um processo detalhado e científico que investiga as funções cognitivas, emocionais e comportamentais, relacionando-as ao funcionamento do cérebro. Por meio de testes e instrumentos validados, o neuropsicólogo avalia habilidades como memória, atenção, linguagem, raciocínio, funções executivas e processamento emocional. Esse tipo de avaliação serve para identificar possíveis alterações cognitivas ou comportamentais, auxiliando no diagnóstico de condições como transtornos de aprendizagem, déficits de atenção, demências, lesões cerebrais, entre outros. Além disso, fornece informações precisas para a elaboração de intervenções personalizadas, reabilitação cognitiva e planejamento de estratégias que promovam a melhoria da qualidade de vida do paciente."
     },
     {
       "icon": "fa fa-child",
@@ -48,9 +48,9 @@
       "text": "A terapia ABA (Análise do Comportamento Aplicada, ou *Applied Behavior Analysis*) é uma abordagem terapêutica baseada em evidências científicas, focada no desenvolvimento de habilidades e na modificação de comportamentos em pessoas com autismo ou outros transtornos do desenvolvimento. Utiliza técnicas para reforçar comportamentos positivos, reduzir comportamentos inadequados e promover a aprendizagem de novas habilidades, como comunicação, interação social e autonomia. A terapia é individualizada, com objetivos claros e mensuráveis, e envolve a coleta de dados para monitorar o progresso. É amplamente reconhecida por sua eficácia no apoio ao desenvolvimento infantil."
     },
     {
-      "icon": "fa fa-brain",
-      "name": "Avaliação Neuropsicológica",
-      "text": "A avaliação neuropsicológica é um processo detalhado e científico que investiga as funções cognitivas, emocionais e comportamentais, relacionando-as ao funcionamento do cérebro. Por meio de testes e instrumentos validados, o neuropsicólogo avalia habilidades como memória, atenção, linguagem, raciocínio, funções executivas e processamento emocional. Esse tipo de avaliação serve para identificar possíveis alterações cognitivas ou comportamentais, auxiliando no diagnóstico de condições como transtornos de aprendizagem, déficits de atenção, demências, lesões cerebrais, entre outros. Além disso, fornece informações precisas para a elaboração de intervenções personalizadas, reabilitação cognitiva e planejamento de estratégias que promovam a melhoria da qualidade de vida do paciente."
+      "icon": "fa fa-user-md",
+      "name": "Psicoterapia",
+      "text": "A psicoterapia é um processo terapêutico conduzido por um profissional qualificado (psicólogo ou psiquiatra) que visa ajudar as pessoas a compreenderem e lidarem com questões emocionais, comportamentais, mentais ou relacionais. Através de diálogo e técnicas específicas, o terapeuta auxilia o paciente a explorar pensamentos, sentimentos e padrões de comportamento, promovendo autoconhecimento, mudanças positivas e bem-estar mental. É um espaço seguro e confidencial para trabalhar desafios pessoais, traumas, ansiedade, depressão, entre outras questões."
     },
     {
       "icon": "fa fa-stethoscope",
@@ -58,9 +58,24 @@
       "text": "A avaliação psicológica para cirurgia é um processo realizado por um psicólogo para avaliar a saúde mental e emocional de um paciente antes de uma intervenção cirúrgica. O objetivo é identificar fatores psicológicos que possam influenciar no preparo, na recuperação ou na adaptação pós-cirúrgica, como ansiedade, expectativas, suporte emocional e capacidade de lidar com mudanças. O psicólogo emite um laudo que auxilia a equipe médica a garantir que o paciente esteja emocionalmente preparado para o procedimento e para o pós-operatório, contribuindo para o sucesso global do tratamento."
     },
     {
+      "icon": "fa fa-graduation-cap",
+      "name": "Psicopedagogia",
+      "text": "Atendimento psicopedagógico voltado à superação das dificuldades de aprendizagem, com estratégias personalizadas que fortalecem o desenvolvimento cognitivo, emocional e escolar."
+    },
+    {
+      "icon": "fa fa-comments",
+      "name": "Fonoaudiologia",
+      "text": "Atendimento fonoaudiológico especializado para desenvolver a comunicação, a fala e a linguagem, promovendo mais autonomia, aprendizado e qualidade de vida em crianças, adolescentes e adultos."
+    },
+    {
       "icon": "fa fa-users",
       "name": "Grupos de Estimulação Cognitiva",
       "text": "Grupos de estimulação cognitiva são intervenções em grupo conduzidas por profissionais da saúde com o objetivo de manter ou melhorar as funções cognitivas, como memória, atenção, raciocínio e linguagem. Por meio de atividades estruturadas, jogos e interações sociais, os participantes exercitam suas habilidades mentais."
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "name": "Consultoria em Recrutamento e Seleção",
+      "text": "Consultoria estratégica em recrutamento e seleção para identificar os profissionais certos para sua empresa, unindo competências técnicas, perfil comportamental e alinhamento com a cultura organizacional."
     }
   ],
   "Testimonials": [

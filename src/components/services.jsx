@@ -2,7 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaWhatsapp } from "react-icons/fa";
 
-import { faUserMd, faChild, faBrain, faStethoscope, faUsers, faBuilding } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUserMd, faChild, faBrain, faStethoscope, faUsers, faBuilding, faComments,
+  faGraduationCap,
+  faBriefcase
+} from '@fortawesome/free-solid-svg-icons';
 
 import { reportWhatsAppConversion } from "../utils/ads";
 
@@ -17,6 +21,9 @@ export const ICONS_MAP = {
   "fa fa-stethoscope": faStethoscope,
   "fa fa-users": faUsers,
   "fa fa-building": faBuilding,
+  "fa fa-comments": faComments,
+  "fa fa-graduation-cap": faGraduationCap,
+  "fa fa-briefcase": faBriefcase
 };
 
 export const Services = (props) => {
@@ -25,17 +32,47 @@ export const Services = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Nossos Serviços</h2>
-          {/* <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p> */}
         </div>
-        <div className="row">
+        {/* <div className="row d-flex align-items-stretch">
+
           {props.data
             ? props.data.map((d, i) => (
-              <div key={`${d.name}-${i}`} className="col-md-4">
-                <FontAwesomeIcon
+              <div key={`${d.name}-${i}`} className="col-md-4 d-flex">
 
+                <div
+                  className="service-card"
+                >
+                  <FontAwesomeIcon
+                    icon={ICONS_MAP[d.icon]}
+                    className="service-icon"
+                    size="4x"
+                    style={{
+                      backgroundColor: '#A0BCB5',
+                      color: '#fff',
+                      padding: '20px',
+                      width: '30px',
+                      height: '30px',
+                      borderRadius: '50%',
+                      marginBottom: '10px'
+                    }}
+                  />
+                  <div className="service-desc">
+                    <h3>{d.name}</h3>
+                    <p>{d.text}</p>
+                  </div>
+
+                </div>
+              </div>
+            ))
+            : "loading"}
+        </div> */}
+
+
+        <div className="services-grid">
+          {props.data
+            ? props.data.map((d, i) => (
+              <div key={`${d.name}-${i}`} className="service-card">
+                <FontAwesomeIcon
                   icon={ICONS_MAP[d.icon]}
                   className="service-icon"
                   size="4x"
@@ -43,12 +80,13 @@ export const Services = (props) => {
                     backgroundColor: '#A0BCB5',
                     color: '#fff',
                     padding: '20px',
-                    width: '50px',
-                    height: '50px',
+                    width: '30px',
+                    height: '30px',
                     borderRadius: '50%',
                     marginBottom: '10px'
                   }}
                 />
+
                 <div className="service-desc">
                   <h3>{d.name}</h3>
                   <p>{d.text}</p>
@@ -57,6 +95,9 @@ export const Services = (props) => {
             ))
             : "loading"}
         </div>
+
+
+
         <h1>Está buscando apoio profissional? Entre em contato conosco!</h1>
         <a
           href="#"
@@ -69,17 +110,8 @@ export const Services = (props) => {
           <FaWhatsapp style={{ marginRight: "8px" }} />
           Fale conosco
         </a>
-
-        {/* <a
-          href="https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!"
-          className="btn btn-whatsapp btn-lg"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaWhatsapp style={{ marginRight: "8px" }} />
-          Fale conosco
-        </a> */}
       </div>
     </div>
+
   );
 };
