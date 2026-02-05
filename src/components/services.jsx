@@ -99,17 +99,15 @@ export const Services = (props) => {
 
 
         <h1>Está buscando apoio profissional? Entre em contato conosco!</h1>
-        <a
-          href="#"
+        <button
+          type="button"
           className="btn btn-whatsapp btn-lg"
-          onClick={(e) => {
-            e.preventDefault();
-            reportWhatsAppConversion(whatsappUrl);
-          }}
+          onClick={() => reportWhatsAppConversion(whatsappUrl)}
         >
           <FaWhatsapp style={{ marginRight: "8px" }} />
           Fale conosco
-        </a>
+        </button>
+
       </div>
     </div>
 

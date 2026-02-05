@@ -29,26 +29,16 @@ export const Header = (props) => {
                   >
                     Conheça Nossos Serviços
                   </a>{" "}
-                  {/* <a
-                    href="https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!"
+
+
+                  <button
+                    type="button"
                     className="btn btn-whatsapp btn-lg"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    onClick={() => reportWhatsAppConversion(whatsappUrl)}
                   >
                     <FaWhatsapp style={{ marginRight: "8px" }} />
                     Fale conosco
-                  </a> */}
-                  <a
-                    href="#"
-                    className="btn btn-whatsapp btn-lg"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      reportWhatsAppConversion(whatsappUrl);
-                    }}
-                  >
-                    <FaWhatsapp style={{ marginRight: "8px" }} />
-                    Fale conosco
-                  </a>
+                  </button>
 
                 </div>
               </div>
