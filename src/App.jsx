@@ -13,12 +13,13 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import FAQ from "./components/FAQ";
 import WhatsAppButton from "./components/WhatsAppButton";
+import VideoPage from "./components/VideoPage";
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
   speedAsDuration: true,
-  offset: 100,
+  offset: 90,
   easing: 'easeInOutCubic',
   updateURL: false,
 });
@@ -37,6 +38,8 @@ const App = () => {
       {/* <Header data={landingPageData.Header} /> */}
 
       <Header data={landingPageData.Header} />
+
+      <VideoPage/>
 
       <div className="teste-p">
         {/* <Features data={landingPageData.Features} /> */}

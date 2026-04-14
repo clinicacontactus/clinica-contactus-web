@@ -24,10 +24,10 @@ export const Header = (props) => {
                 <p className="">{props.data ? props.data.paragraph2 : "Loading"}</p>
                 <div className="botoes">
                   <a
-                    href="#services"
+                    href="#video"
                     className="btn btn-custom btn-lg page-scroll"
                   >
-                    Conheça Nossos Serviços
+                    Conheça Nossa Clínica
                   </a>{" "}
 
 
