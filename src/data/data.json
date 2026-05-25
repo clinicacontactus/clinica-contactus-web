@@ -81,6 +81,36 @@
   "Testimonials": [
     {
       "img": "img/testimonials/woman-icon.jpg",
+      "text": "\"Excelentes profissionais, levo meu filho para se consultar com a psicóloga infantil Mirella, ela é muito acolhedora. Sou muito grata por ter encontrado um lugar com excelente profissional, localização e preço acessível.\"",
+      "name": "Patricia Rodrigues De Souza"
+    },
+    {
+      "img": "img/testimonials/man-icon.jpg",
+      "text": "\"O ambiente é acolhedor, tranquilo e faz você se sentir à vontade desde o primeiro momento. Os profissionais são excelentes, atenciosos, éticos e realmente comprometidos com o bem-estar de cada paciente!\"",
+      "name": "Junior Silva"
+    },
+    {
+      "img": "img/testimonials/woman-icon.jpg",
+      "text": "\"Atendimento excelente, ambiente acolhedor, profissionais super competentes. Meu filho só evoluiu depois que começou o acompanhamento com a Tia Mirella.\"",
+      "name": "Mariana Chaves"
+    },
+    {
+      "img": "img/testimonials/woman-icon.jpg",
+      "text": "\"Espaço maravilhoso, confortável e acolhedor, tanto para as crianças como para as famílias. Profissionais maravilhosos, respeitosos, acolhedores, realistas e que passam segurança de uma forma totalmente diferenciada.\"",
+      "name": "Cybele Karyny"
+    },
+    {
+      "img": "img/testimonials/man-icon.jpg",
+      "text": "\"Ambiente agradável e acolhedor. Parabéns por serem essas profissionais que inspiram e cuidam com tanto carinho e dedicação.\"",
+      "name": "Victor Marques"
+    },
+    {
+      "img": "img/testimonials/person-icon.jpg",
+      "text": "\"Mais do que perfeita, uma profissional que mudou a vida do meu filho e da minha família. Super indico, maravilhosa demais.\"",
+      "name": "CB Cordoes Do Brasil"
+    },
+    {
+      "img": "img/testimonials/woman-icon.jpg",
       "text": "\"Ótima clínica e um espaço bastante confortável. Faço terapia com a psicóloga Mirella, ela é muito acolhedora e atenciosa.\"",
       "name": "Maria Eduarda Sá"
     },
@@ -90,9 +120,24 @@
       "name": "Cinara Alves"
     },
     {
+      "img": "img/testimonials/man-icon.jpg",
+      "text": "\"Excelente clínica! Profissionais muito competentes e ambiente tranquilo e bem aconchegante. Recomendo muito.\"",
+      "name": "Leandro Alves Maciel Filho"
+    },
+    {
       "img": "img/testimonials/woman-icon.jpg",
       "text": "\"Um ambiente muito agradável com profissionais excelentes. Recomendo demais!\"",
       "name": "Larissa Serrão"
+    },
+    {
+      "img": "img/testimonials/person-icon.jpg",
+      "text": "\"Muito bom atendimento. São muito atenciosos e capacitados.\"",
+      "name": "Oliv"
+    },
+    {
+      "img": "img/testimonials/woman-icon.jpg",
+      "text": "\"O espaço é lindo e a avaliação foi muito boa. O neuro do meu filho disse que o laudo é muito completo. Sou muito grata.\"",
+      "name": "Elenilda Freire"
     }
   ],
   "Team": [
@@ -116,6 +161,20 @@
       "job": "Psicóloga Clínica e Supervisora ABA",
       "crp": "CRP 11/19015",
       "formacoes": "Psicóloga Clínica, especialista em Análise do Comportamento Aplicada (ABA). Especialização em Gestalt-Terapia e Educação Inclusiva."
+    },
+    {
+      "img": "img/imgs/especialistas/Rami.jpg",
+      "name": "Rami Raquel Oliveora da Silva",
+      "job": "Fonoaudióloga",
+      "crp": "CRF 8-13228/CE",
+      "formacoes": "Fonoaudióloga"
+    },
+    {
+      "img": "img/imgs/especialistas/giseli.jpg",
+      "name": "Giseli Pereira da Silva",
+      "job": "Psicopedagoga com especialista em neuropsicomotricidade e pós em ABA",
+      "crp": "CRP 3568",
+      "formacoes": "Psicopedagoga com especialista em neuropsicomotricidade e pós em ABA"
     }
   ],
   "Contact": {
@@ -125,7 +184,7 @@
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com",
-    "whatsapp": "https://api.whatsapp.com/send?phone=5585994098488&text=Olá, gostaria de mais informações!",
+    "whatsapp": "https://wa.me/5585994098488?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!",
     "instagram": "https://www.instagram.com/clinicacontactus"
   },
   "Features": [

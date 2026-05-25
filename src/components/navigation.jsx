@@ -1,12 +1,15 @@
 import React from "react";
 
-export const Navigation = (props) => {
+export const Navigation = () => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
         <div className="navbar-header">
-
-          <img src="img/imgs/new-logo.png" className="img-header" alt="" />{" "}
+          <img
+            src="img/imgs/new-logo.png"
+            className="img-header"
+            alt="Clínica Contactus"
+          />{" "}
 
           <button
             type="button"
@@ -15,18 +18,14 @@ export const Navigation = (props) => {
             data-target="#bs-example-navbar-collapse-1"
           >
             {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
+            <span className="sr-only">Abrir navegação</span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-
         </div>
 
-        <div
-          className="collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1"
-        >
+        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="#header" className="page-scroll">
@@ -43,29 +42,16 @@ export const Navigation = (props) => {
                 Serviços
               </a>
             </li>
-
             <li>
               <a href="#team" className="page-scroll">
                 Profissionais
               </a>
             </li>
-
-            {/* <li>
-              <a href="#about" className="page-scroll">
-                Sobre nós
-              </a>
-            </li> */}
-            {/* <li>
-              <a href="#portfolio" className="page-scroll">
-                Nossa Clínica
-              </a>
-            </li> */}
             <li>
               <a href="#testimonials" className="page-scroll">
                 Avaliações
               </a>
             </li>
-
             <li>
               <a href="#contact" className="page-scroll">
                 Onde nos encontrar

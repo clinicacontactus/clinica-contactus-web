@@ -1,13 +1,8 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { reportWhatsAppConversion } from "../utils/ads";
-
-const WHATSAPP_NUMBER = "5585994098488";
-const MESSAGE = "Olá, gostaria de mais informações!";
-const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(MESSAGE)}`;
+import { reportWhatsAppConversion, WHATSAPP_URL } from "../utils/ads";
 
 export const Header = (props) => {
-
   return (
     <header id="header">
       <div className="intro">
@@ -21,25 +16,22 @@ export const Header = (props) => {
                   {props.data ? props.data.paragraph : "Loading"}
                   <span></span>
                 </h1>
-                <p className="">{props.data ? props.data.paragraph2 : "Loading"}</p>
+                <p>{props.data ? props.data.paragraph2 : "Loading"}</p>
                 <div className="botoes">
-                  <a
-                    href="#video"
-                    className="btn btn-custom btn-lg page-scroll"
-                  >
+                  <a href="#video" className="btn btn-custom btn-lg page-scroll">
                     Conheça Nossa Clínica
                   </a>{" "}
 
-
-                  <button
-                    type="button"
+                  <a
+                    href={WHATSAPP_URL}
                     className="btn btn-whatsapp btn-lg"
-                    onClick={() => reportWhatsAppConversion(whatsappUrl)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={reportWhatsAppConversion}
                   >
                     <FaWhatsapp style={{ marginRight: "8px" }} />
                     Fale conosco
-                  </button>
-
+                  </a>
                 </div>
               </div>
             </div>
