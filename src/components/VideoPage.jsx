@@ -1,6 +1,6 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { reportWhatsAppConversion, WHATSAPP_URL } from "../utils/ads";
+import { getWhatsAppUrl, reportWhatsAppClick } from "../utils/ads";
 
 export default function VideoPage() {
   return (
@@ -32,11 +32,13 @@ export default function VideoPage() {
         </a>{" "}
 
         <a
-          href={WHATSAPP_URL}
+          href={getWhatsAppUrl()}
           className="btn btn-whatsapp btn-lg"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={reportWhatsAppConversion}
+          onClick={(event) =>
+            reportWhatsAppClick("institutional_video", event)
+          }
         >
           <FaWhatsapp style={{ marginRight: "8px" }} />
           Fale conosco
