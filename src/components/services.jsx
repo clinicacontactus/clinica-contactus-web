@@ -14,7 +14,7 @@ import {
   faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { reportWhatsAppConversion, WHATSAPP_URL } from "../utils/ads";
+import { getWhatsAppUrl, reportWhatsAppClick } from "../utils/ads";
 
 export const ICONS_MAP = {
   "fa fa-user-md": faUserMd,
@@ -68,11 +68,11 @@ export const Services = (props) => {
           Está buscando apoio profissional? Entre em contato conosco!
         </h2>
         <a
-          href={WHATSAPP_URL}
+          href={getWhatsAppUrl()}
           className="btn btn-whatsapp btn-lg"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={reportWhatsAppConversion}
+          onClick={(event) => reportWhatsAppClick("services", event)}
         >
           <FaWhatsapp style={{ marginRight: "8px" }} />
           Fale conosco

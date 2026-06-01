@@ -1,14 +1,14 @@
 import { FaWhatsapp } from "react-icons/fa";
-import { reportWhatsAppConversion, WHATSAPP_URL } from "../utils/ads";
+import { getWhatsAppUrl, reportWhatsAppClick } from "../utils/ads";
 
 const WhatsAppButton = () => {
   return (
     <a
-      href={WHATSAPP_URL}
+      href={getWhatsAppUrl()}
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
-      onClick={reportWhatsAppConversion}
+      onClick={(event) => reportWhatsAppClick("floating_button", event)}
     >
       <FaWhatsapp style={{ marginRight: "8px" }} />
       Fale conosco

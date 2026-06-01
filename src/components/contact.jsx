@@ -1,4 +1,4 @@
-import { reportWhatsAppConversion, WHATSAPP_URL } from "../utils/ads";
+import { getWhatsAppUrl, reportWhatsAppClick } from "../utils/ads";
 
 export const Contact = (props) => {
   return (
@@ -50,16 +50,33 @@ export const Contact = (props) => {
                   </li>
                   <li>
                     <a
-                      href={WHATSAPP_URL}
+                      href={getWhatsAppUrl()}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="WhatsApp da Clínica Contactus"
-                      onClick={reportWhatsAppConversion}
+                      onClick={(event) =>
+                        reportWhatsAppClick("contact_footer", event)
+                      }
                     >
                       <i className="fa fa-whatsapp"></i>
                     </a>
                   </li>
                 </ul>
+                <div className="contact-privacy-links">
+                  <a href="/politica-de-privacidade.html">
+                    Política de privacidade
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      window.dispatchEvent(
+                        new Event("contactus:open-consent-preferences")
+                      )
+                    }
+                  >
+                    Gerenciar cookies
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -14,6 +14,7 @@ import "./App.css";
 import FAQ from "./components/FAQ";
 import WhatsAppButton from "./components/WhatsAppButton";
 import VideoPage from "./components/VideoPage";
+import CookieConsent from "./components/CookieConsent";
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -63,6 +64,8 @@ const App = () => {
         <WhatsAppButton></WhatsAppButton>
 
       </div>
+
+      <CookieConsent />
 
     </div>
 
